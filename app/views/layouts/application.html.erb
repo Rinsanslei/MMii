@@ -17,10 +17,11 @@
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <%= link_to "MMii", root_path, class: "navbar-brand"%>
-      <form class="d-flex mx-auto" role="search">
-        <input class="form-control" type="search" placeholder="Recherche">
+      <form class="d-flex mx-auto" role="search" action="<%= miis_path %>" method="get">
+        <input class="form-control" type="search" name="term" placeholder="Tapez un nom">
+        <button class="recherche" type="submit">Rechercher</button>
       </form>
-      <%= button_to "Créer un Mmii", new_mii_path, class: "align-self-center"%>
+      <%= link_to "Créer un Mmii", new_mii_path, class: "btn btn_create align-self-center"%>
     </div>
   </nav>
   </header>

@@ -17,11 +17,61 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@500&display=swap');
 
-button {
-    border-radius: 50px;
+h1 {
+    font-family: "Concert One", sans-serif;
+    margin-bottom: 4%;
+    margin-bottom: 4%;
+}
+
+.show-page .hidden-label {
+    display: none;
+  }
+
+.btn {
+    background-color: gray;
+    color: white;
+    border-radius: 60px;
+    font-family: "Concert One", sans-serif;
+    margin-left: 3%;
+}
+
+.btn:hover {
+    background-color: #71C1D3; 
+    color: black; 
+
+}
+
+.btn_retour {
+    margin-bottom: 5%;
+}
+
+
+.btn_create {
+    background-color: white;
+    border-color: #71C1D3;
+    border-radius: 60px;
+    border-width: 2px;
+    color: black;
+}
+
+.btn_create:hover {
+        background-color: gray; 
+        color: white; 
+
+}
+
+.recherche {
+    background-color: white;
+    border-color: #71C1D3;
+    border-radius: 60px;
     font-family: "Concert One", sans-serif;
 }
 
+.navbar {   
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
 
 .form-control {
     border-radius: 50px;
@@ -32,7 +82,33 @@ button {
 
 .titre_accueil {
     font-family: "Concert One", sans-serif;
+    margin-bottom: 4%;
+    margin-bottom: 4%;
+}
+
+.cards_gallery {
+    margin: 3%;
 }
 
 
+.padding{
+    padding-right: 3%;
+    padding-left: 3%;
+}
 
+.padding_edit {
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.btn_delete {
+    background-color: red;
+    color: white;
+    border-radius: 60px;
+    font-family: "Concert One", sans-serif;
+}
+
+.card_mii {
+    margin-left : 3%;
+
+}

@@ -3,21 +3,20 @@
 
 <h1 class="titre_accueil text-center">Bienvenue sur Mmii !</h1>
 
-<div id="miis" class="row row-cols-1 row-cols-md-4">
+<div id="miis" class="cards_gallery row row-cols-1 row-cols-md-4">
   <% @miis.each do |mii| %>
     <div class="col mb-4">
-      <div class="card" style="width: 18rem;">
+    <div class="card h-100">
       <img src="<%= mii.image %>" class="card-img-top" alt="Photo de <%= mii.name %> <%= mii.firstname %>">
         <div class="card-body">
           <h5 class="card-title"><%= mii.name %> <%= mii.firstname %></h5>
-          <a href="<%= dom_id mii%>" class="btn btn-primary">Voir ce MMii</a>
+          <%= link_to "Voir ce MMii", mii_path(mii), class: "btn" %>
         </div>
       </div>
     </div>
   <% end %>
 </div>
 
-
-<%= link_to "Créer un MMii", new_mii_path %>
-
-
+<div class ="cards_mii">
+<%= link_to "Créer un MMii", new_mii_path, class: "btn" %>
+</div>

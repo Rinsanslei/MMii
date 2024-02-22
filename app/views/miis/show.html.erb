@@ -1,10 +1,29 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @mii %>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+    <div class="card_mii padding" style="width: 18rem;">
+    <%= image_tag @mii.image, class: "card-img-top", alt: "Image de #{@mii}" %>
+    <div class="card-body">
+      <p class="card-text">"<%= @mii.slogan %>"</p>
+    </div>
+  </div>
+    </div>
+    <div class="col text-start">
+    <h2><%= @mii.name%> <%= @mii.firstname%></h2>  
+    <p>#<%= @mii.keyword%></p>
+    <p>aka <%= @mii.nickname%></p>
+    <p><%= @mii.age%> ans </p>
+    <p>Description: <br> <%= @mii.description%></p>
+    </div>
+    </div>
+  </div>
 
-<div>
-<%= link_to "Modifier ce MMii", edit_mii_path(@mii) %> 
-<%= button_to link_too "Retour à l'accueil", miis_path %>
 
-  <%= button_to "Détruire ce MMii", @mii, method: :delete %>
+<div class = "padding" >
+<%= link_to "Modifier ce MMii", edit_mii_path(@mii), class: "btn" %> 
+<%=link_to "Retour à l'accueil", miis_path, class: "btn btn_retour" %>
+
+  <%= button_to "Détruire ce MMii", @mii, method: :delete, class: "btn btn_delete" %>
 </div>

@@ -1,9 +1,10 @@
-<h1>New mii</h1>
+<div class = "padding">
+<h1>Nouveau mii</h1>
 
-<%= render "form", mii: @mii %>
+<%= render "form", mii: @mii, class: "btn btn-primary" %>
 
 <br>
 
-<div>
-  <%= button_to link_to "Retour à  l'accueil", miis_path %>
+<div class= "btn_retour">
+  <%= link_to "Retour à  l'accueil", miis_path, class: "btn" %>
 </div>

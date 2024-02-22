@@ -3,7 +3,12 @@ class MiisController < ApplicationController
 
   # GET /miis or /miis.json
   def index
-    @miis = Mii.all
+    @term = params[:term]
+    if @term.present?
+      @miis = Mii.where("name LIKE ?", "%#{@term}%")
+    else
+      @miis = Mii.all
+    end
   end
 
   # GET /miis/1 or /miis/1.json
