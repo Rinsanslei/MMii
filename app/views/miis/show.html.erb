@@ -3,8 +3,8 @@
 <%= render @mii %>
 
 <div>
-  <%= link_to "Modifier ce MMii", edit_mii_path(@mii) %> |
-  <%= link_to "Retour à MMii", miis_path %>
+<%= link_to "Modifier ce MMii", edit_mii_path(@mii) %> 
+<%= button_to link_too "Retour à l'accueil", miis_path %>
 
   <%= button_to "Détruire ce MMii", @mii, method: :delete %>
 </div>

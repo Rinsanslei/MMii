@@ -1,17 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
 
-<h1 class="text-center">Bienvenue sur Mmii !</h1>
+<h1 class="titre_accueil text-center">Bienvenue sur Mmii !</h1>
 
-<div id="miis">
+<div id="miis" class="row row-cols-1 row-cols-md-4">
   <% @miis.each do |mii| %>
-    <%= render mii %>
-    <p>
-      <%= link_to "Voir ce MMii", mii %>
-    </p>
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+      <img src="<%= mii.image %>" class="card-img-top" alt="Photo de <%= mii.name %> <%= mii.firstname %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= mii.name %> <%= mii.firstname %></h5>
+          <a href="<%= dom_id mii%>" class="btn btn-primary">Voir ce MMii</a>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "Ajouter un MMii", new_mii_path %>
+
+<%= link_to "Créer un MMii", new_mii_path %>
 
 

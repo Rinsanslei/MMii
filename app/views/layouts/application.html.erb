@@ -8,20 +8,25 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@500&display=swap" rel="stylesheet">
   </head>
 
+  <header>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <%= link_to "MMii", root_path, class: "navbar-brand"%>
+      <form class="d-flex mx-auto" role="search">
+        <input class="form-control" type="search" placeholder="Recherche">
+      </form>
+      <%= button_to "Créer un Mmii", new_mii_path, class: "align-self-center"%>
+    </div>
+  </nav>
+  </header>
+  
   <body>
-<header>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <%= link_to "MMii", root_path, class: "navbar-brand" %>
-    <form class="d-flex" role="search">
-      <input class="form-control" type="search" placeholder="Search" >
-    </form>
-    <button>Créer un MMii</button>
-  </div>
-</nav>
-</header>
+
     <%= yield %>
   </body>
 </html>
