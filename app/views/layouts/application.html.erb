@@ -11,6 +11,17 @@
   </head>
 
   <body>
+<header>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <%= link_to "MMii", root_path, class: "navbar-brand" %>
+    <form class="d-flex" role="search">
+      <input class="form-control" type="search" placeholder="Search" >
+    </form>
+    <button>Créer un MMii</button>
+  </div>
+</nav>
+</header>
     <%= yield %>
   </body>
 </html>

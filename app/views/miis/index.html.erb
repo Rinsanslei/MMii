@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Miis</h1>
+
+<h1 class="text-center">Bienvenue sur Mmii !</h1>
 
 <div id="miis">
   <% @miis.each do |mii| %>
     <%= render mii %>
     <p>
-      <%= link_to "Show this mii", mii %>
+      <%= link_to "Voir ce MMii", mii %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New mii", new_mii_path %>
+<%= link_to "Ajouter un MMii", new_mii_path %>
+
+
