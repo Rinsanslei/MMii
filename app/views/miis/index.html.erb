@@ -7,9 +7,9 @@
   <% @miis.each do |mii| %>
     <div class="col mb-4">
     <div class="card h-100">
-      <img src="<%= mii.image %>" class="card-img-top" alt="Photo de <%= mii.name %> <%= mii.firstname %>">
+      <img src="<%= mii.image %>" class="card-img-top" alt="Photo de <%= mii.firstname %> <%= mii.name %> ">
         <div class="card-body">
-          <h5 class="card-title"><%= mii.name %> <%= mii.firstname %></h5>
+          <h5 class="card-title"><%= mii.firstname %> <%= mii.name %></h5>
           <%= link_to "Voir ce MMii", mii_path(mii), class: "btn" %>
         </div>
       </div>
