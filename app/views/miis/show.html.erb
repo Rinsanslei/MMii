@@ -1,29 +1,31 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container text-center">
+<div class="container">
   <div class="row">
     <div class="col">
     <div class="card_mii padding" style="width: 18rem;">
     <%= image_tag @mii.image, class: "card-img-top", alt: "Image de #{@mii}" %>
-    <div class="card-body">
+    <div class="card-body card_slogan shadow-sm p-3 mb-5 rounded">
       <p class="card-text">"<%= @mii.slogan %>"</p>
     </div>
+<div>
+<%= link_to "Modifier ce MMii", edit_mii_path(@mii), class: "btn btn_modifier" %> 
+  <%= button_to "Détruire ce MMii", @mii, method: :delete, class: "btn btn_delete" %>
+  </div>
   </div>
     </div>
     <div class="col text-start">
     <h2><%= @mii.firstname%> <%= @mii.name%></h2>  
-    <p>#<%= @mii.keyword%></p>
+    <h6>#<%= @mii.keyword%></h6>
     <p>aka <%= @mii.nickname%></p>
     <p><%= @mii.age%> ans </p>
-    <p>Description: <br> <%= @mii.description%></p>
+    <div class= "description shadow-sm p-3 mb-5 rounded">
+    <p><strong>Description: </strong><br> <%= @mii.description%></p>
+    </div>
+    <%=link_to "Retour à l'accueil", miis_path, class: "btn btn_retour" %>
     </div>
     </div>
   </div>
 
 
-<div class = "padding" >
-<%= link_to "Modifier ce MMii", edit_mii_path(@mii), class: "btn btn_modifier" %> 
-<%=link_to "Retour à l'accueil", miis_path, class: "btn btn_retour" %>
 
-  <%= button_to "Détruire ce MMii", @mii, method: :delete, class: "btn btn_delete" %>
-</div>
