@@ -15,7 +15,7 @@
 /*Custom bootstrap variables must be set or imported *before* bootstrap. */
 @import "bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Inter:wght@100..900&display=swap');
 
 h1 {
     font-family: "Concert One", sans-serif;
@@ -23,9 +23,33 @@ h1 {
     margin-bottom: 4%;
 }
 
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 75px;
+}
+
+h5 {
+    font-family: "Concert One", sans-serif;
+}
+
+h6 {
+    font-family: "Bebas Neue", sans-serif;
+    color: gray;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
 .show-page .hidden-label {
     display: none;
-  }
+os}
+
+.container {
+    margin-top: 5%;
+}
 
 .btn {
     background-color: gray;
@@ -33,18 +57,27 @@ h1 {
     border-radius: 60px;
     font-family: "Concert One", sans-serif;
     margin-left: 3%;
+    -webkit-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    -moz-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
 }
 
 .btn:hover {
-    background-color: #71C1D3; 
-    color: black; 
+    background-color: lightgray;
+    color: black;
+    -webkit-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    -moz-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
 
+}
+
+.btn_voir:hover {
+    background-color: white;
+    color: black;
 }
 
 .btn_retour {
     margin-top: 1rem;
-    
-
 }
 
 
@@ -57,8 +90,11 @@ h1 {
 }
 
 .btn_create:hover {
-        background-color: gray; 
-        color: white; 
+    background-color: gray;
+    color: white;
+    -webkit-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    -moz-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
 
 }
 
@@ -67,9 +103,20 @@ h1 {
     border-color: #71C1D3;
     border-radius: 60px;
     font-family: "Concert One", sans-serif;
+    -webkit-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    -moz-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
 }
 
-.navbar {   
+.recherche:hover {
+    background-color: gray;
+    color: white;
+    -webkit-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    -moz-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+}
+
+.navbar {
     padding-right: 3%;
     padding-left: 3%;
 
@@ -80,7 +127,6 @@ h1 {
     padding-right: 8%;
     padding-left: 8%;
 }
-
 
 .titre_accueil {
     font-family: "Concert One", sans-serif;
@@ -93,7 +139,7 @@ h1 {
 }
 
 
-.padding{
+.padding {
     padding-right: 3%;
     padding-left: 3%;
 }
@@ -110,11 +156,33 @@ h1 {
     font-family: "Concert One", sans-serif;
     margin-top: 1rem;
 }
-.btn_modifier { 
+
+.btn_delete:hover {
+    background-color: #75242c;
+    color: white;
+    margin-top: 1rem;
+}
+
+.btn_modifier {
     margin-top: 1rem;
 }
 
 .card_mii {
-    margin-left : 3%;
+    margin-left: 3%;
+    box-shadow: 10%;
 
+}
+
+.card-body {
+    background-color: #71C1D3;
+}
+
+.card_slogan {
+    padding: 3.5%;
+}
+
+.description {
+    background-color: #71C1D3;
+    padding: 3%;
+    margin-right: 0%;
 }
