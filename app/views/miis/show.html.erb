@@ -1,15 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: "><%= notice %></p>
 
 <div class="container">
   <div class="row">
     <div class="col">
-    <div class="card_mii padding" style="width: 18rem;">
+    <div style="width: 18rem;">
     <%= image_tag @mii.image, class: "card-img-top", alt: "Image de #{@mii}" %>
     <div class="card-body card_slogan shadow-sm p-3 mb-5 rounded">
       <p class="card-text">"<%= @mii.slogan %>"</p>
     </div>
 <div>
+<div class="modifier">
 <%= link_to "Modifier ce MMii", edit_mii_path(@mii), class: "btn btn_modifier" %> 
+</div>
   <%= button_to "Détruire ce MMii", @mii, method: :delete, class: "btn btn_delete" %>
   </div>
   </div>
@@ -21,7 +23,7 @@
     <p><%= @mii.age%> ans </p>
     <div class= "description shadow-sm p-3 mb-5 rounded">
     <p><strong>Description: </strong><br> <%= @mii.description%></p>
-    </div>
+    </div class="retour">
     <%=link_to "Retour à l'accueil", miis_path, class: "btn btn_retour" %>
     </div>
     </div>

@@ -1,7 +1,7 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: "><%= notice %></p>
 
 
-<h1 class="titre_accueil text-center">Bienvenue sur Mmii !</h1>
+<h1 class="titre_accueil text-center">MMii </h1>
 
 <div id="miis" class="cards_gallery row row-cols-1 row-cols-md-4">
   <% @miis.each do |mii| %>
@@ -17,6 +17,6 @@
   <% end %>
 </div>
 
-<div class ="cards_mii">
-<%= link_to "Créer un MMii", new_mii_path, class: "btn" %>
+<div class ="cards_mii create">
+<%= link_to "Créer un MMii", new_mii_path, class: "btn btn_create " %>
 </div>

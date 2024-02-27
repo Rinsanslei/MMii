@@ -22,7 +22,7 @@
 h1 {
     font-family: "Concert One", sans-serif;
     margin-bottom: 4%;
-    
+
 }
 
 h2 {
@@ -45,77 +45,221 @@ p {
     font-size: 20px;
 }
 
+body {
+    background-color: #f0eeee;
+}
+
+.titre_accueil {
+    font-size: 200px;
+    background: linear-gradient(to bottom, white 50%, #71C1D3);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 8px #71C1D3;
+}
+
 .show-page .hidden-label {
     display: none;
-os}
+}
 
 .container {
     margin-top: 5%;
 }
 
-.btn {
-    background-color: gray;
-    color: white;
-    border-radius: 60px;
+.btn_voir {
     font-family: "Concert One", sans-serif;
-    margin-left: 3%;
-    -webkit-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    -moz-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    --bs-btn-hover-border-color: none;
+    font-family: "Concert One", sans-serif;
+    background: #338A9E;
+    border: 1px solid #338A9E;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
 }
 
-.btn:hover {
-    background-color: lightgray;
-    color: black;
-    -webkit-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    -moz-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-
-}
-
-.btn_voir:hover {
-    background-color: white;
-    color: black;
+.btn_voir:hover,
+.button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: white;
 }
 
 .btn_retour {
     margin-top: 1rem;
-}
+        font-family: "Concert One", sans-serif;
+        --bs-btn-hover-border-color: none;
+        font-family: "Concert One", sans-serif;
+        background: #338A9E;
+        border: 1px solid #338A9E;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 16px;
+        min-height: 40px;
+        outline: 0;
+        padding: 12px 14px;
+        text-align: center;
+        text-rendering: geometricprecision;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+    }
+    
+    .btn_retour:hover,
+    .btn_retour:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #338A9E;
+    }
 
 
 .btn_create {
-    background-color: white;
-    border-color: #71C1D3;
-    border-radius: 60px;
-    border-width: 2px;
-    color: black;
+    --bs-btn-hover-border-color: none;
+    font-family: "Concert One", sans-serif;
+    background-color: #518f9d;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
-.btn_create:hover {
-    background-color: gray;
-    color: white;
-    -webkit-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    -moz-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-
+.btn_create:after {
+    background-clip: padding-box;
+    background-color: #46abc2;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
+
+.btn_create:main,
+.button-19:focus {
+    user-select: auto;
+}
+
+.btn_create:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+
+.btn_create:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+.create {
+    padding-left: 3%;
+}
+
 
 .recherche {
-    background-color: white;
-    border-color: #71C1D3;
-    border-radius: 60px;
     font-family: "Concert One", sans-serif;
-    -webkit-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    -moz-box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    box-shadow: 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+    background-color: #518f9d;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
-.recherche:hover {
-    background-color: gray;
-    color: white;
-    -webkit-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    -moz-box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
-    box-shadow: inset 7px 7px 4px -3px rgba(145, 145, 145, 0.68);
+.recherche::after {
+    background-clip: padding-box;
+    background-color: #46abc2;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.recherche:main,
+.button-19:focus {
+    user-select: auto;
+}
+
+.recherche:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.recherche:disabled {
+    cursor: auto;
+}
+
+.recherche:active {
+    border-width: 4px 0 0;
+    background: none;
 }
 
 .navbar {
@@ -124,10 +268,25 @@ os}
 
 }
 
+.navbar-brand {
+    font-family: "Concert One", sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to bottom, white 50%, #71C1D3);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #71C1D3;
+}
+
+.navbar-brand:hover {
+    color: white;
+    -webkit-text-stroke: 1.5px #a0e0ee;
+}
+
 .form-control {
-    border-radius: 50px;
+    border-radius: 16px;
     padding-right: 8%;
     padding-left: 8%;
+    margin-right: 2%;
 }
 
 .titre_accueil {
@@ -152,26 +311,78 @@ os}
 }
 
 .btn_delete {
-    background-color: red;
-    color: white;
-    border-radius: 60px;
+    --bs-btn-hover-border-color: none;
     font-family: "Concert One", sans-serif;
-    margin-top: 1rem;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
 }
 
-.btn_delete:hover {
-    background-color: #75242c;
-    color: white;
-    margin-top: 1rem;
+.btn_delete:hover,
+.btn_delete:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.modifier {
+    padding-bottom: 5%;
 }
 
 .btn_modifier {
-    margin-top: 1rem;
+    font-family: "Concert One", sans-serif;
+    --bs-btn-hover-border-color: none;
+    font-family: "Concert One", sans-serif;
+    background: #338A9E;
+    border: 1px solid #338A9E;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
 }
 
-.card_mii {
-    margin-left: 3%;
-    box-shadow: 10%;
+.btn_modifier:hover,
+.btn_retour:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #338A9E;
+}
+
+.cards_mii {
+    padding-bottom: 5%;
 
 }
 
